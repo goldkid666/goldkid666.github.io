@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://goldkid666.github.io/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 10 Apr 2021 09:58:26 +0800</lastBuildDate><atom:link href="https://goldkid666.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>https://goldkid666.github.io/posts/my-first-post/</link>
+      <pubDate>Sat, 10 Apr 2021 09:58:26 +0800</pubDate>
+      
+      <guid>https://goldkid666.github.io/posts/my-first-post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://goldkid666.github.io/post/first/</link>
+      <pubDate>Sat, 10 Apr 2021 08:12:20 +0800</pubDate>
+      
+      <guid>https://goldkid666.github.io/post/first/</guid>
+      <description>哈哈哈哈 Hello,World!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://goldkid666.github.io/post/readme/</link>
+      <pubDate>Sat, 10 Apr 2021 08:12:20 +0800</pubDate>
+      
+      <guid>https://goldkid666.github.io/post/readme/</guid>
+      <description>Hello,World!
+这里是罪歌的个人博客！欢迎来访！</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://goldkid666.github.io/post/%E6%89%8B%E5%8A%A8%E4%BD%BF%E7%94%A8jdkproxy%E5%AE%9E%E7%8E%B0%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/</link>
+      <pubDate>Sat, 10 Apr 2021 08:12:20 +0800</pubDate>
+      
+      <guid>https://goldkid666.github.io/post/%E6%89%8B%E5%8A%A8%E4%BD%BF%E7%94%A8jdkproxy%E5%AE%9E%E7%8E%B0%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/</guid>
+      <description>接口
+public interface Calculator { public int add(int i,int j); public int subStrict(int i,int j); public int multiply(int i,int j); public double division(int i,int j); } 接口实现类(被代理对象)
+import com.atguigu.aop.Calculator; import org.springframework.stereotype.Component; @Component public class CalculatorImpl implements Calculator { public int add(int i, int j) { System.out.println(&amp;#34;执行方法&amp;#34;); return i + j; } public int subStrict(int i, int j) { return i - j; } public int multiply(int i, int j) { return i * j; } public double division(int i, int j) { return i / j; } } 生成动态代理对象的工厂类</description>
+    </item>
+    
+  </channel>
+</rss>
