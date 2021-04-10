@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>HOME on Sinsong的个人博客</title>
     <link>https://goldkid666.github.io/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content in HOME on Sinsong的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 10 Apr 2021 09:58:26 +0800</lastBuildDate><atom:link href="https://goldkid666.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>My First Post</title>
-      <link>https://goldkid666.github.io/posts/my-first-post/</link>
-      <pubDate>Sat, 10 Apr 2021 09:58:26 +0800</pubDate>
-      
-      <guid>https://goldkid666.github.io/posts/my-first-post/</guid>
-      <description></description>
-    </item>
-    
+    <copyright>© Edna West</copyright>
+    <lastBuildDate>Sat, 10 Apr 2021 08:12:20 +0800</lastBuildDate><atom:link href="https://goldkid666.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://goldkid666.github.io/post/first/</link>
@@ -44,6 +36,16 @@
       <description>接口
 public interface Calculator { public int add(int i,int j); public int subStrict(int i,int j); public int multiply(int i,int j); public double division(int i,int j); } 接口实现类(被代理对象)
 import com.atguigu.aop.Calculator; import org.springframework.stereotype.Component; @Component public class CalculatorImpl implements Calculator { public int add(int i, int j) { System.out.println(&amp;#34;执行方法&amp;#34;); return i + j; } public int subStrict(int i, int j) { return i - j; } public int multiply(int i, int j) { return i * j; } public double division(int i, int j) { return i / j; } } 生成动态代理对象的工厂类</description>
+    </item>
+    
+    <item>
+      <title>Sample project</title>
+      <link>https://goldkid666.github.io/portfolio/sample-project/</link>
+      <pubDate>Thu, 02 May 2019 19:47:09 +0200</pubDate>
+      
+      <guid>https://goldkid666.github.io/portfolio/sample-project/</guid>
+      <description>This would be a description of your sample project. You can add any content you&amp;rsquo;d like.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
     
   </channel>
