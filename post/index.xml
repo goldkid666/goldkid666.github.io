@@ -28,12 +28,12 @@
     </item>
     
     <item>
-      <title></title>
+      <title>手动使用JDKProxy实现动态代理</title>
       <link>/post/%E6%89%8B%E5%8A%A8%E4%BD%BF%E7%94%A8jdkproxy%E5%AE%9E%E7%8E%B0%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/</link>
       <pubDate>Sat, 10 Apr 2021 08:12:20 +0800</pubDate>
       
       <guid>/post/%E6%89%8B%E5%8A%A8%E4%BD%BF%E7%94%A8jdkproxy%E5%AE%9E%E7%8E%B0%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/</guid>
-      <description>接口
+      <description>手动使用JDKProxy实现动态代理 接口
 public interface Calculator { public int add(int i,int j); public int subStrict(int i,int j); public int multiply(int i,int j); public double division(int i,int j); } 接口实现类(被代理对象)
 import com.atguigu.aop.Calculator; import org.springframework.stereotype.Component; @Component public class CalculatorImpl implements Calculator { public int add(int i, int j) { System.out.println(&amp;#34;执行方法&amp;#34;); return i + j; } public int subStrict(int i, int j) { return i - j; } public int multiply(int i, int j) { return i * j; } public double division(int i, int j) { return i / j; } } 生成动态代理对象的工厂类</description>
     </item>
