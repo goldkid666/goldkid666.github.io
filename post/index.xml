@@ -38,5 +38,33 @@ public interface Calculator { public int add(int i,int j); public int subStrict(
 import com.atguigu.aop.Calculator; import org.springframework.stereotype.Component; @Component public class CalculatorImpl implements Calculator { public int add(int i, int j) { System.out.println(&amp;#34;执行方法&amp;#34;); return i + j; } public int subStrict(int i, int j) { return i - j; } public int multiply(int i, int j) { return i * j; } public double division(int i, int j) { return i / j; } } 生成动态代理对象的工厂类</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>/post/%E4%BD%BF%E7%94%A8hugo&#43;gitee%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E4%BD%BF%E7%94%A8hugo&#43;gitee%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>一、hugo的安装 ​	从hugo releases下载对应版本的hugo压缩包（我的版本是v0.82.0），解压之后，在path下配置环境变量.路径为hugo目录（看你自己解压的目录路径位置）。
+之后打开cmd 执行命令 hugo version 能看到版本号就是成功了。
+二、创建新站点 使用命令: hugo new site 创建的路径与目录名
+例:
+这里在我的hugo目录下新建了一个名为blog的站点,已经可以看到里面多了一个这个对应的目录了。
+查看目录 可以看到里面的目录结构，其中config.toml是网站的配置文件，content 目录放 markdown 文章，data 目录放数据，layouts 目录放网站模板文件，static 目录放图片等静态资源，themes 命令放下载的主题。
+三、尝试创建第一篇文章 ​	在此站点根目录下打开cmd使用命令:hugo new 路径名+文件名.md 此目录会在content目录下创建对应的文件。如果路径带了不存在的目录则会同时创建文件夹(跟linux那个差不多)
+​	注意:其实可以直接将现成的md文件粘贴到content目录下。但是跟命令创建的不同是，命令创建的自带一些配置:文章标题、文章创建时间、是否为草稿。
+​	文档前draft: true表示该文章为草稿，在编译的时候会自动略过，发布的站点内也不会有这篇文章。你自己拉的的.md文件也要加上以下内容以便hugo识别。(跟yaml文件的配置一样的写法 冒号后面一定要空一格再写属性)
+title: &amp;#34;First&amp;#34; date: 2021-08-21 draft: true 示例:
+四、安装主题 ​	hugo没有默认主题，如果没有安装主题的话是没法看到自己的文章啥的。所以首先得去官网找个自己喜欢的主题模板，然后拿到它的github地址，进入themes文件夹下使用git把主题仓库clone到本地。(主题没有用git发布的话可以直接下到压缩包解压到themes文件夹下也可以)
+​	官方主题下载网站:https://themes.gohugo.io/
+​	中文版:https://www.gohugo.org/theme/ （中文网站上没那么多模版）
+我这里随便选了一款,点击demo可以去看看它的示例网站。下面是一些各个方面的说明。这里我们直接点击Download去下载就好。
+​	点击之后跳转到了他们发布的github仓库,点击code,复制链接。
+​	接下来我们来到themes文件夹打开git终端，直接clone拉下来就行。
+​	因为github网速不稳定,失败了一次，重新拉一下就好了。完成之后themes下会有这个主题目录。
+​	然后我们修改hugo的配置文件config.toml,主题名指定为这个主题的目录名字就好。(比如这个我换成了techfeed-hugo)
+​	其他的设置也可以看看，比如title修改的是站点标题,baseurl是基准地址，之后需要修改为你gitee pages的地址。
+五、在本地启动hugo服务器预览站点效果 ​	在站点目录下运行命令: hugo server -D （-D表示会编译草稿，可以随便拉一篇md到content下面试试）</description>
+    </item>
+    
   </channel>
 </rss>
