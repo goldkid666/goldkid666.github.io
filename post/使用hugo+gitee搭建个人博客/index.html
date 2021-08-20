@@ -42,7 +42,7 @@
   <div class="intro">
     <div class="logo-container">
       <a href="/">
-        <img src='/images/gopher.png' alt="Profile Sample project" class="rounded-logo">
+        <img src='/images/gopher.png' alt="Profile " class="rounded-logo">
       </a>
     </div>
     <h2>Hi, I'm Singsong 👋</h2>
@@ -248,13 +248,13 @@
 <h2 id="一hugo的安装">一、hugo的安装</h2>
 <p>​	从hugo releases下载对应版本的hugo压缩包（我的版本是v0.82.0），解压之后，在path下配置环境变量.路径为hugo目录（看你自己解压的目录路径位置）。</p>
 <p>之后打开cmd 执行命令 hugo version 能看到版本号就是成功了。</p>
-<p><img src="image-20210820185318893.png" alt="image-20210820185318893"></p>
+<p><img src="https://github.com/goldkid666/goldkid666.github.io/blob/master/post/img/image-20210820185318893.png" alt="image-20210820185318893"></p>
 <h2 id="二创建新站点">二、创建新站点</h2>
 <p>使用命令: hugo new site 创建的路径与目录名</p>
 <p>例:</p>
-<p><img src="image-20210820190307595.png" alt="image-20210820190307595"></p>
+<p><img src="https://github.com/goldkid666/goldkid666.github.io/blob/master/post/img/image-20210820190307595.png" alt="image-20210820190307595"></p>
 <p>这里在我的hugo目录下新建了一个名为blog的站点,已经可以看到里面多了一个这个对应的目录了。</p>
-<p><img src="image-20210820190509019.png" alt="image-20210820190509019"></p>
+<p><img src="https://github.com/goldkid666/goldkid666.github.io/blob/master/post/img/image-20210820190509019.png" alt="image-20210820190509019"></p>
 <p>查看目录 可以看到里面的目录结构，其中<code>config.toml</code>是网站的配置文件，<code>content</code> 目录放 markdown 文章，<code>data</code> 目录放数据，<code>layouts</code> 目录放网站模板文件，<code>static</code> 目录放图片等静态资源，<code>themes</code> 命令放下载的主题。</p>
 <h3 id="三尝试创建第一篇文章">三、尝试创建第一篇文章</h3>
 <p>​	在此站点根目录下打开cmd使用命令:hugo new 路径名+文件名.md
@@ -265,31 +265,31 @@
 	date: 2021-08-21
 	draft: true
 </code></pre></div><p>示例:</p>
-<p><img src="image-20210820191633489.png" alt="image-20210820191633489"></p>
-<p><img src="img%5Cimage-20210820191645137.png" alt="image-20210820191645137"></p>
-<p><img src="image-20210820191703770.png" alt="image-20210820191703770"></p>
+<p><img src="https://github.com/goldkid666/goldkid666.github.io/blob/master/post/img/image-20210820191633489.png" alt="image-20210820191633489"></p>
+<p><img src="https://github.com/goldkid666/goldkid666.github.io/blob/master/post/img/img%5Cimage-20210820191645137.png" alt="image-20210820191645137"></p>
+<p><img src="https://github.com/goldkid666/goldkid666.github.io/blob/master/post/img/image-20210820191703770.png" alt="image-20210820191703770"></p>
 <h4 id="四安装主题">四、安装主题</h4>
 <p>​	hugo没有默认主题，如果没有安装主题的话是没法看到自己的文章啥的。所以首先得去官网找个自己喜欢的主题模板，然后拿到它的github地址，进入themes文件夹下使用git把主题仓库clone到本地。(主题没有用git发布的话可以直接下到压缩包解压到themes文件夹下也可以)</p>
 <p>​	官方主题下载网站:https://themes.gohugo.io/</p>
 <p>​	中文版:https://www.gohugo.org/theme/  （中文网站上没那么多模版）</p>
-<p><img src="image-20210820193751168.png" alt="image-20210820193751168"></p>
+<p><img src="https://github.com/goldkid666/goldkid666.github.io/blob/master/post/img/image-20210820193751168.png" alt="image-20210820193751168"></p>
 <p>我这里随便选了一款,点击demo可以去看看它的示例网站。下面是一些各个方面的说明。这里我们直接点击Download去下载就好。</p>
-<p><img src="image-20210820193913790.png" alt="image-20210820193913790"></p>
+<p><img src="https://github.com/goldkid666/goldkid666.github.io/blob/master/post/img/image-20210820193913790.png" alt="image-20210820193913790"></p>
 <p>​	点击之后跳转到了他们发布的github仓库,点击code,复制链接。</p>
 <p>​	接下来我们来到themes文件夹打开git终端，直接clone拉下来就行。</p>
-<p><img src="image-20210820194656891.png" alt="image-20210820194656891"></p>
+<p><img src="https://github.com/goldkid666/goldkid666.github.io/blob/master/post/img/image-20210820194656891.png" alt="image-20210820194656891"></p>
 <p>​	因为github网速不稳定,失败了一次，重新拉一下就好了。完成之后themes下会有这个主题目录。</p>
 <p>​	然后我们修改hugo的配置文件<code>config.toml</code>,主题名指定为这个主题的目录名字就好。(比如这个我换成了techfeed-hugo)</p>
 <p>​	其他的设置也可以看看，比如title修改的是站点标题,baseurl是基准地址，之后需要修改为你gitee pages的地址。</p>
 <h2 id="五在本地启动hugo服务器预览站点效果">五、在本地启动hugo服务器预览站点效果</h2>
 <p>​	在站点目录下运行命令: hugo server -D （-D表示会编译草稿，可以随便拉一篇md到content下面试试）</p>
 <p>​	然后访问默认的地址http://localhost:1313/ 就能看到效果了</p>
-<p>​	<img src="image-20210820195408892.png" alt="image-20210820195408892"></p>
+<p>​	<img src="https://github.com/goldkid666/goldkid666.github.io/blob/master/post/img/image-20210820195408892.png" alt="image-20210820195408892"></p>
 <p>​	我做到这里翻车了。。看报错是因为模板与hugo版本不兼容。emmmm,要么安个新版hugo,要么换一个模板,我选择了安个新版，而且更换了个主题,然后重复之前的步骤。</p>
-<p>​	<img src="image-20210820211310258.png" alt="image-20210820211310258"></p>
+<p>​	<img src="https://github.com/goldkid666/goldkid666.github.io/blob/master/post/img/image-20210820211310258.png" alt="image-20210820211310258"></p>
 <p>​	目前大抵的样式有了,后面那些样式,文章，可以更改配置文件改变。这个可以自己阅读下主题的使用说明(readme.md那个)</p>
 <h2 id="六创建并将仓库部署到giteepages上">六、创建并将仓库部署到giteePages上</h2>
-<p><img src="image-20210820212717300.png" alt="image-20210820212717300"></p>
+<p><img src="https://github.com/goldkid666/goldkid666.github.io/blob/master/post/img/image-20210820212717300.png" alt="image-20210820212717300"></p>
 <p>​	要实名认证，稍微等等.</p>
 <h2 id="七将博客网站部署到gitee上">七、将博客网站部署到gitee上</h2>
 <p>​	先编译站点，</p>
@@ -301,7 +301,7 @@
 <p>​	这时即使访问你的gitee pages域名也是没有更新内容的,需要在服务那里再次点击Gitee Pages =》 更新，会弹出重新部署的弹窗。再次访问网页就能看到更新的文章了。</p>
 <p>​	（ps:如果有兴趣可以买个域名，解析gitee pages的二级域名，就可以通过自己的域名访问博客网站了。）</p>
 <p>​	我的gitee实名还没有通过,可以看下我之前在github上搭建的博客网站。操作来说基本相差不大。网址:https://sinsong.xyz/</p>
-<p><img src="image-20210820214716927.png" alt="image-20210820214716927"></p>
+<p><img src="https://github.com/goldkid666/goldkid666.github.io/blob/master/post/img/image-20210820214716927.png" alt="image-20210820214716927"></p>
 
 
     </main>
